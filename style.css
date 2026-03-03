@@ -14,5 +14,31 @@ body{
     background-image: url(images/backround.png);
     background-size: cover;
     background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    max-width: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(60, 0, 91);
+    text-decoration: none;
+    font-size: 18px;
 
 }
