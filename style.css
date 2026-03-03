@@ -8,15 +8,28 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
+#header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/user.png);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #000000 0%, #120018 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
 }
 .container{
-    padding: 10px 10%;
+    padding: 30px 10%;
 }
 nav{
     display: flex;
@@ -26,8 +39,13 @@ nav{
 }
 
 .logo{
-    width: 140px;
+     width: 250px;
+    height: auto;
 
+}
+.logo:hover {
+    filter: drop-shadow(0 0 6px #f6d903);
+    transition: 0.3s ease;
 }
 
 nav ul li {
@@ -37,7 +55,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color: rgb(60, 0, 91);
+    color: rgb(246, 217, 3);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -48,7 +66,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(246, 217, 3);
+    background:  rgb(150, 15, 247);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -60,12 +78,16 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
-    color: rgb(60, 0, 91);
+    color: rgb(246, 217, 3);
 
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-    color: rgb(60, 0, 91);
+    color: rgb(246, 217, 3);
+
+}
+.header-text h1 span{
+    color: rgb(150, 15, 247);
 
 }
