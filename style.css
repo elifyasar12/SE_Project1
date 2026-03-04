@@ -221,6 +221,50 @@ nav ul li a:hover {
         margin-bottom: 30px;
     }
 
+/*------------------skills----------------------*/
 
+#skills {
+    padding: 80px 5%;
+}
+
+.skills-intro {
+    max-width: 600px;
+    margin: 20px 0 50px;
+    opacity: 0.8;
+}
+
+.skills-cards {
+    display: flex;
+    gap: 40px;
+}
+
+.skills-card {
+    flex: 1;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient( 145deg, rgba(120, 40, 255, 0.25), rgba(40, 0, 80, 0.35) );
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    transition: 0.4s ease;
+}
+
+.skills-card h3 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.skills-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-card ul li {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.skills-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+}
 
 }
