@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 body{
-    background:
-        radial-gradient(circle at 75% 50%, rgba(255,200,80,0.25), transparent 40%),
-        radial-gradient(circle at 20% 40%, rgba(61, 19, 92, 0.3), transparent 50%),
-        linear-gradient(135deg, #1a0026 0%, #090012 100%);
+     background:
+        radial-gradient(circle at 75% 50%, rgba(255,200,80,0.2), transparent 40%),
+        radial-gradient(circle at 20% 40%, rgba(150,15,247,0.25), transparent 50%),
+        linear-gradient(135deg, #220033 0%, #120018 100%);
     color: #fff;
 }
 
@@ -220,51 +220,113 @@ nav ul li a:hover {
     .about-col-1 {
         margin-bottom: 30px;
     }
-
+}
 /*------------------skills----------------------*/
 
 #skills {
-    padding: 80px 5%;
+    padding: 90px 1%;
+    position: relative;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(255, 200, 80, 0.15), transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(150, 15, 247, 0.2), transparent 50%),
+        linear-gradient(135deg, #1a0026 0%, #090012 100%);
+}
+#skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,215,0,0.4), transparent);
 }
 
-.skills-intro {
-    max-width: 600px;
-    margin: 20px 0 50px;
+#skills .sub-title {
+    margin-bottom: 15px;
+}
+.skills-tagline {
+    margin-top: 5px;
+    color: #fff;
+    margin-bottom: 60px;
+    margin-bottom: 80px;
+    font-size: 18px;
     opacity: 0.8;
 }
 
-.skills-cards {
+.skills-grid {
     display: flex;
-    gap: 40px;
+    gap: 50px;
+    justify-content: center;
+    position: relative;
 }
 
-.skills-card {
+.skills-grid::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(150,15,247,0.25), transparent 70%);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.skill-box {
     flex: 1;
-    padding: 30px;
-    border-radius: 20px;
-    background: linear-gradient( 145deg, rgba(120, 40, 255, 0.25), rgba(40, 0, 80, 0.35) );
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    transition: 0.4s ease;
+    max-width: 350px;
+    padding: 45px;
+    border-radius: 25px;
+    .skill-box {
+    position: relative;
+    z-index: 1;
+}
+    background: linear-gradient(
+        145deg,
+        rgba(75, 0, 130, 0.5),
+        rgba(25, 0, 60, 0.8)
+    );
+
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow:
+        0 0 40px rgba(150, 15, 247, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+
+    transition: all 0.4s ease;
+}
+.skill-box:hover {
+    transform: translateY(-12px);
+    border-color: gold;
+    box-shadow:
+        0 0 60px rgba(255, 215, 0, 0.3),
+        0 0 80px rgba(150, 15, 247, 0.3);
 }
 
-.skills-card h3 {
+.skill-box h3 {
     color: gold;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.skills-card ul {
+.skill-box ul {
     list-style: none;
     padding: 0;
 }
 
-.skills-card ul li {
-    margin-bottom: 10px;
+.skill-box ul li {
+    margin-bottom: 12px;
     opacity: 0.9;
+    position: relative;
+    padding-left: 20px;
 }
 
-.skills-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+.skill-box ul li::before {
+    content: "•";
+    color: gold;
+    position: absolute;
+    left: 0;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
 }
 
 }
