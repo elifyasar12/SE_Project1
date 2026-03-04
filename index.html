@@ -1,118 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-         <img src="images/logo.png" alt="logo" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-    <div class="header-text">
-      <h1>Hi, I’m Elif Yasar </h1>
-      <h2 class="roles">
-       DIVISION I VOLLEYBALL ATHLETE <br>
-       - & -<br>
-       SOFTWARE DEVELOPER
-       </h2>
-      
-     <p>I am a Computer Science graduate student and Division I athlete 
-       with a passion for building impactful software solutions. 
-       I combine discipline from athletics with problem-solving skills in technology.</p>
-    
-        </div>
-      </div>
-       <img src="images/background.png" class="hero-image">
+<head>
+    <meta charset="UTF-8">
+    <title>Elif Yasar | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="nav-container">
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <!--------------------------------ABOUT------------------------------------->
-    <div id="about">
-      <div class="contaiener">
-        <div class="row">
-          <div class="about-col-1">
-             <img src="images/user.png">
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About</h1>
-            <p>I am a Computer Science graduate student with a strong foundation in software development and problem-solving. 
-              As a Division I volleyball athlete, I have developed discipline, leadership, and resilience that translate 
-              directly into my academic and technical work. My background combines competitive athletics with technology, 
-              allowing me to approach challenges with both strategic thinking and determination. I am passionate about building 
-              impactful software solutions and continuously expanding my skills in modern technologies.</p>
-              <div class="about-cards">
-                <div class="about-card">
-                   <h3>Education</h3>
-                   <p> Master’s in Computer Science at the University at Albany. 
-                    Focused on software engineering, system design, and modern technologies.</p>
-                  </div>
-                  <div class="about-card">
-                    <h3>Background</h3>
-                     <p>Division I Volleyball Athlete balancing elite athletics with 
-                      graduate-level academics and technical projects.</p> 
-                    </div>
-                     <div class="about-card">
-                      <h3>Career Goals</h3>
-                       <p>
-                        Aspiring software engineer aiming to build scalable, impactful 
-                        technology solutions in innovative environments.
-                       </p>
-                      </div>
-                    </div>
-            </div>
-          </div>
-        </div>
-      </div>
-<!-------------------------SKILLS------------------>
-<div id="skills">
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="header">
   <div class="container">
-    <h1 class="sub-title">Skills</h1>
-    <p class="skills-tagline">Technologies I Work With</p>
+    
+    <nav>
+      <!-- keep your nav exactly as is -->
+    </nav>
 
-    <div class="skills-grid">
+    <div class="header-text">
+      <h1>Hi, I’m Elif<br>Yasar</h1>
 
-      <div class="skill-box">
-        <h3>Programming</h3>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>C / C++</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
+      <h2 class="roles">
+        DIVISION I VOLLEYBALL ATHLETE <br>
+        - & - <br>
+        SOFTWARE DEVELOPER
+      </h2>
 
-      <div class="skill-box">
-        <h3>Frameworks</h3>
-        <ul>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-        </ul>
-      </div>
-
-      <div class="skill-box">
-        <h3>Tools</h3>
-        <ul>
-          <li>Git / GitHub</li>
-          <li>MongoDB</li>
-          <li>DigitalOcean</li>
-          <li>VS Code</li>
-        </ul>
-      </div>
-
+      <p>
+        I am a Computer Science graduate student and Division I athlete 
+        with a passion for building impactful software solutions. 
+        I combine discipline from athletics with problem-solving skills in technology.
+      </p>
     </div>
+
   </div>
-</div>
+
+  <img src="images/background.png" class="hero-image">
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <div class="section-header">
+        <h1>About</h1>
+        <p>Who I Am</p>
+    </div>
+
+    <div class="about-container">
+        <div class="about-image">
+            <img src="images/user.png">
+        </div>
+
+        <div class="about-content">
+            <p>
+                I combine elite athletics with software engineering.
+                My focus is on scalable systems and AI-driven applications.
+            </p>
+
+            <div class="grid-3">
+                <div class="card hidden">
+                    <h3>Education</h3>
+                    <p>Master’s in Computer Science at University at Albany.</p>
+                </div>
+
+                <div class="card hidden">
+                    <h3>Background</h3>
+                    <p>Division I athlete balancing performance and academics.</p>
+                </div>
+
+                <div class="card hidden">
+                    <h3>Career Goals</h3>
+                    <p>Build impactful, scalable technology solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <div class="section-header">
+        <h1>Skills</h1>
+        <p>Technologies I Work With</p>
+    </div>
+
+    <div class="grid-3">
+        <div class="card hidden">
+            <h3>💻 Programming</h3>
+            <p>Python<br>Java<br>C / C++<br>JavaScript</p>
+        </div>
+
+        <div class="card hidden">
+            <h3>⚙ Frameworks</h3>
+            <p>React<br>Node.js<br>Express</p>
+        </div>
+
+        <div class="card hidden">
+            <h3>🧰 Tools</h3>
+            <p>Git / GitHub<br>MongoDB<br>DigitalOcean<br>VS Code</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research">
+    <div class="section-header">
+        <h1>Research</h1>
+        <p>My Academic Focus</p>
+    </div>
+
+    <div class="grid-2">
+        <div class="card hidden">
+            <h3>🧠 Existing Work</h3>
+            <p>Deep learning for medical image analysis and fracture detection.</p>
+        </div>
+
+        <div class="card hidden">
+            <h3>🚀 Future Interests</h3>
+            <p>AI-driven healthcare systems and interpretable deep learning.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+    <div class="section-header">
+        <h1>Projects</h1>
+        <p>Selected Work</p>
+    </div>
+
+    <div class="grid-2">
+        <div class="card hidden">
+            <h3>🩻 Medical Image Fracture Detection</h3>
+            <p>Deep learning model using CNN architectures.</p>
+            <small>Python • PyTorch • OpenCV</small>
+        </div>
+
+        <div class="card hidden">
+            <h3>🌐 Alumni Web Application</h3>
+            <p>Full-stack alumni networking platform.</p>
+            <small>React • Node • MongoDB</small>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <div class="section-header">
+        <h1>Contact</h1>
+        <p>Let’s Connect</p>
+    </div>
+
+    <div class="contact-grid">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> yourname@email.com</p>
+            <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
+            <p><i class="fa-brands fa-github"></i> GitHub</p>
+        </div>
+    </div>
+</section>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
