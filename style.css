@@ -7,7 +7,7 @@
 body{
     background:
         radial-gradient(circle at 75% 50%, rgba(255,200,80,0.25), transparent 40%),
-        radial-gradient(circle at 20% 40%, rgba(150,15,247,0.3), transparent 50%),
+        radial-gradient(circle at 20% 40%, rgba(61, 19, 92, 0.3), transparent 50%),
         linear-gradient(135deg, #1a0026 0%, #090012 100%);
     color: #fff;
 }
@@ -107,7 +107,7 @@ nav ul li a:hover {
 }
 .header-text h2{
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color:rgb(225, 182, 255);
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -134,7 +134,7 @@ nav ul li a:hover {
 
 #about{
     padding: 60px 2%;
-    color: gold;
+    color:rgb(225, 182, 255);
 }
 .row{
     display: flex;
@@ -150,10 +150,39 @@ nav ul li a:hover {
 }
 .about-col-2{
     flex-basis: 60%;
+    line-height: 1.5;
+    opacity: 0.9;
 
 }
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: gold;
+.sub-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: gold;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: gold;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links:hover::after{
+    width: 50%;
+}
+.tab-links.active-link::after{
+    width: 50%;
 }
