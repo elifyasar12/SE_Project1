@@ -47,7 +47,7 @@ nav{
 }
 
 .logo{
-     width: 250px;
+    width: 250px;
     height: auto;
 
 }
@@ -133,7 +133,7 @@ nav ul li a:hover {
 /*------------abaout-----------*/
 
 #about{
-    padding: 80px 0;
+    padding: 60px 2%;
     color: gold;
 }
 .row{
@@ -147,4 +147,13 @@ nav ul li a:hover {
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: gold;
 }
