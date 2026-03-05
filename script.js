@@ -35,20 +35,18 @@ container.appendChild(dot);
 
 });
 
-document.querySelector("form").addEventListener("submit", function(e){
+document.querySelector("#contact-form").addEventListener("submit", function(e){
+
+e.preventDefault();
 
 const name = document.querySelector("input[type='text']").value;
 const email = document.querySelector("input[type='email']").value;
+const message = document.querySelector("textarea").value;
 
-if(name.trim() === ""){
-alert("Please enter your name");
-e.preventDefault();
-}
+console.log(name, email, message);
 
-if(!email.includes("@")){
-alert("Please enter a valid email");
-e.preventDefault();
-}
+alert("Message sent! (Demo form)");
+this.reset();
 
 });
 
@@ -58,4 +56,18 @@ const navLinks = document.querySelector("#nav-links");
 
 menuBtn.addEventListener("click", () => {
 navLinks.classList.toggle("active");
+});
+
+const toggle = document.querySelector("#theme-toggle");
+
+toggle.addEventListener("click", () => {
+
+  document.body.classList.toggle("light-mode");
+
+  if(document.body.classList.contains("light-mode")){
+      toggle.textContent = "☀️";
+  } else {
+      toggle.textContent = "🌙";
+  }
+
 });

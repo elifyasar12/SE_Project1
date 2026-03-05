@@ -36,6 +36,7 @@ Top navigation menu
 
 <img src="images/logo.png" class="logo">
 
+
 <!-- Mobile Menu Button -->
 <div class="menu-toggle">
 <i class="fa-solid fa-bars"></i>
@@ -49,6 +50,8 @@ Top navigation menu
 <li><a href="#research">Research</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
+<li><button id="theme-toggle">🌙</button>
+</li>
 </ul>
 
 </div>
@@ -340,7 +343,7 @@ Contact form + social links
 <div class="contact-grid">
 
 <!-- Contact Form -->
-<form>
+<form id="contact-form">
 
 <input type="text" placeholder="Your Name" required>
 
@@ -349,14 +352,16 @@ Contact form + social links
 <textarea rows="5" placeholder="Your Message"></textarea>
 
 <button type="submit">Send Message</button>
-
 </form>
 
 
 <!-- Contact Info -->
 <div class="contact-info">
 
-<p><i class="fa-solid fa-envelope"></i> elifyasar2002@gmail.com</p>
+<p>
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:elifyasar2002@gmail.com">elifyasar2002@gmail.com</a>
+</p>
 
 <p>
 <i class="fa-brands fa-linkedin"></i>
@@ -368,12 +373,13 @@ Contact form + social links
 <a href="https://github.com/elifyasar12" target="_blank">GitHub</a>
 </p>
 
+<!-- Resume Download Button -->
+<a href="resume.pdf" target="_blank"><i class="fa-solid fa-download"></i> Download Resume
+</a>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 
@@ -383,10 +389,6 @@ Animations / particles / mobile nav
 ====================================================== -->
 
 <script src="script.js"></script>
-
-
-<!-- Resume Download Button -->
-<a href="resume.pdf" class="btn">Download Resume</a>
 
 
 </body>
