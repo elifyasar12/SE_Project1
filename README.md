@@ -1,4 +1,4 @@
-Personal Portfolio Website
+# Personal Portfolio Website
 
 ## Overview
 This project is a responsive personal portfolio website developed for **ICSI 518: Software Engineering**.  
