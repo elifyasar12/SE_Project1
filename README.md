@@ -83,8 +83,8 @@ The contact form uses **Formspree API** to simulate backend form submission.
 
 # Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Font Awesome Icons
 - Formspree API (Contact Form)
