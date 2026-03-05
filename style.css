@@ -387,8 +387,111 @@ border-color:gold;
 box-shadow:0 20px 60px rgba(255,215,0,0.25);
 }
 
+/* =========================================================
+BLOG SECTION
+========================================================= */
 
+.blog-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+margin-top:40px;
+}
 
+.blog-card{
+
+padding:30px;
+border-radius:18px;
+
+background:
+linear-gradient(
+145deg,
+rgba(110,0,180,0.45),
+rgba(20,0,60,0.85)
+);
+
+border:1px solid rgba(255,215,0,0.25);
+
+box-shadow:0 10px 40px rgba(0,0,0,0.5);
+
+transition:0.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-6px);
+}
+
+.blog-card h3{
+color:#FFD700;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.blog-card p{
+line-height:1.7;
+font-size:15px;
+color:#ddd;
+}
+
+/* ================= BLOG BACKGROUND IMAGE ================= */
+
+#blog{
+position:relative;
+overflow:hidden;
+}
+
+.blog-bg{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+
+width:800px;
+
+background-image:url("images/lol.png");
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+
+opacity:0.22;
+
+z-index:0;
+height:100%;
+width:100%;
+}
+
+/* Keep content above the image */
+
+#blog .section-header,
+#blog .blog-container{
+position:relative;
+z-index:2;
+}
+/* =========================================================
+BLOG META INFO
+Date + Category Tag
+========================================================= */
+
+.blog-meta{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:12px;
+}
+
+.blog-date{
+font-size:13px;
+color:#ccc;
+}
+
+.blog-tag{
+font-size:12px;
+background:#FFD700;
+color:black;
+padding:4px 10px;
+border-radius:20px;
+font-weight:600;
+}
 /* =========================================================
 CONTACT SECTION
 Contact form and info
@@ -542,45 +645,4 @@ text-align:center;
 grid-template-columns:1fr;
 }
 
-}
-/* =========================================================
-LIGHT MODE
-Overrides dark gradient completely
-========================================================= */
-
-body.light-mode{
-background:white !important;
-background-image:none !important;
-color:black;
-}
-
-/* sections */
-body.light-mode section{
-background:white !important;
-}
-
-/* navbar (keep black theme) */
-body.light-mode nav{
-background:black !important;
-}
-
-/* text colors */
-body.light-mode p{
-color:#333;
-}
-
-body.light-mode .about-text{
-color:#333;
-}
-
-/* titles */
-body.light-mode .section-header h1{
-color:#6a00ff;
-}
-
-/* cards */
-body.light-mode .card{
-background:#f5f5f5;
-color:black;
-border:1px solid #ddd;
 }

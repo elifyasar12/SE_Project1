@@ -49,9 +49,8 @@ Top navigation menu
 <li><a href="#skills">Skills</a></li>
 <li><a href="#research">Research</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#blog">Blog</a></li>
 <li><a href="#contact">Contact</a></li>
-<li><button id="theme-toggle">🌙</button>
-</li>
 </ul>
 
 </div>
@@ -179,6 +178,7 @@ Programming / frameworks / tools
 <section id="skills">
 
 <div class="particles"></div>
+<div class="skills-bg"></div>
 
 <div class="section-header">
 <h1>Skills</h1>
@@ -226,8 +226,8 @@ Academic research interests
 ====================================================== -->
 
 <section id="research">
-
 <div class="particles"></div>
+<div class="research-bg"></div>
 
 <div class="section-header">
 <h1>Research</h1>
@@ -323,6 +323,86 @@ View Code
 
 </section>
 
+<!------------------------BLOG------------------------->
+<section id="blog">
+ <div class="particles"></div>
+<div class="blog-bg"></div>
+
+<div class="section-header">
+<h1>Blog</h1>
+</div>
+
+<div class="blog-container">
+
+
+<!-- BLOG POST 1 -->
+<div class="blog-card">
+
+<div class="blog-meta">
+<span class="blog-date">March 2026</span>
+<span class="blog-tag">Web Development</span>
+</div>
+
+<h3>Building My Personal Portfolio</h3>
+
+<p>
+Designing and developing this portfolio website allowed me to combine creativity with technical problem solving. 
+The project was built using HTML, CSS, and JavaScript with a focus on responsive design and interactive elements. 
+I implemented smooth scrolling navigation, animated sections, and a dynamic layout to improve user experience. 
+Through this project I strengthened my front-end development skills and gained deeper understanding of how modern 
+web interfaces are structured and styled.
+</p>
+
+</div>
+
+
+
+<!-- BLOG POST 2 -->
+<div class="blog-card">
+
+<div class="blog-meta">
+<span class="blog-date">February 2026</span>
+<span class="blog-tag">Artificial Intelligence</span>
+</div>
+
+<h3>Artificial Intelligence Research</h3>
+
+<p>
+My research interests focus on artificial intelligence applications in healthcare, particularly medical image analysis. 
+I am currently exploring how machine learning models can assist in detecting bone fractures from medical imaging data. 
+By leveraging deep learning techniques, AI systems can help doctors analyze images more efficiently and potentially 
+improve diagnostic accuracy. This research area is exciting because it combines computer science with real-world 
+medical impact.
+</p>
+
+</div>
+
+
+
+<!-- BLOG POST 3 -->
+<div class="blog-card">
+
+<div class="blog-meta">
+<span class="blog-date">January 2026</span>
+<span class="blog-tag">Student Life</span>
+</div>
+
+<h3>Balancing Athletics and Computer Science</h3>
+
+<p>
+As a Division I volleyball athlete pursuing a master’s degree in computer science, balancing athletics and academics 
+has been both challenging and rewarding. Training, competitions, and travel require strong time management, discipline, 
+and focus. At the same time, working on programming assignments, research projects, and software development has 
+strengthened my analytical thinking. These experiences have helped me develop resilience and teamwork skills that 
+translate directly into technical and professional environments.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
 
 <!-- ======================================================
 CONTACT SECTION
@@ -343,15 +423,16 @@ Contact form + social links
 <div class="contact-grid">
 
 <!-- Contact Form -->
-<form id="contact-form">
+<form id="contact-form" action="https://formspree.io/f/mreyzbqd" method="POST">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Your Email" required>
 
-<textarea rows="5" placeholder="Your Message"></textarea>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
 <button type="submit">Send Message</button>
+
 </form>
 
 

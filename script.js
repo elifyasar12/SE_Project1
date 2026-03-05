@@ -34,7 +34,7 @@ container.appendChild(dot);
 
 
 });
-
+/*
 document.querySelector("#contact-form").addEventListener("submit", function(e){
 
 e.preventDefault();
@@ -49,6 +49,7 @@ alert("Message sent! (Demo form)");
 this.reset();
 
 });
+*/
 
 // MOBILE NAV MENU
 const menuBtn = document.querySelector(".menu-toggle");
@@ -58,16 +59,6 @@ menuBtn.addEventListener("click", () => {
 navLinks.classList.toggle("active");
 });
 
-const toggle = document.querySelector("#theme-toggle");
 
-toggle.addEventListener("click", () => {
 
-  document.body.classList.toggle("light-mode");
 
-  if(document.body.classList.contains("light-mode")){
-      toggle.textContent = "☀️";
-  } else {
-      toggle.textContent = "🌙";
-  }
-
-});
