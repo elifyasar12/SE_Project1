@@ -7,7 +7,6 @@ The goal of the project is to showcase personal skills, research interests, and 
 
 The website was built using **HTML, CSS, and JavaScript** and is fully responsive across desktop and mobile devices.
 
----
 
 # Features
 
@@ -19,7 +18,6 @@ The home section introduces the portfolio owner and includes:
 
 It also includes a modern hero layout with animated particles and a glass-style information card.
 
----
 
 ## About Section
 The About section provides background information including:
@@ -29,7 +27,6 @@ The About section provides background information including:
 
 This section highlights both academic and athletic experiences as a Division I athlete and graduate computer science student.
 
----
 
 ## Skills Section
 The skills section lists the technical skills used in software development.
@@ -39,8 +36,6 @@ Categories include:
 - Frameworks (React, Node.js, Express)
 - Tools (GitHub, MongoDB, DigitalOcean, VS Code)
 
----
-
 ## Research Section
 The research section explains current and future research interests.
 
@@ -49,7 +44,6 @@ Topics include:
 - Bone fracture detection using neural networks
 - AI-driven healthcare systems
 
----
 
 ## Projects Section
 The projects section showcases software projects with descriptions and GitHub links.
@@ -63,7 +57,6 @@ Each project includes:
 - Technologies used
 - GitHub repository link
 
----
 
 ## Blog Section
 The website includes a blog system where posts describe technical topics and personal experiences.
@@ -76,7 +69,6 @@ Blog posts include:
 
 This section demonstrates dynamic content structure similar to real developer blogs.
 
----
 
 ## Contact Section
 The contact section allows visitors to connect through:
@@ -89,7 +81,6 @@ The contact section allows visitors to connect through:
 
 The contact form uses **Formspree API** to simulate backend form submission.
 
----
 
 # Technologies Used
 
@@ -99,7 +90,6 @@ The contact form uses **Formspree API** to simulate backend form submission.
 - Font Awesome Icons
 - Formspree API (Contact Form)
 
----
 
 # Advanced Features
 
@@ -111,7 +101,6 @@ The contact form is connected to the Formspree API which allows messages to be s
 ### 2. Blog System
 A blog section was implemented where posts contain metadata such as dates and category tags.
 
----
 
 # Responsive Design
 
@@ -123,7 +112,6 @@ The website is fully responsive and adapts to:
 
 This was implemented using CSS media queries and flexible layouts.
 
----
 
 # Repository Structure
 portfolio
@@ -133,9 +121,6 @@ style.css
 script.js
 resume.pdf
 images/
-
-
----
 
 # Author
 
@@ -148,5 +133,3 @@ Division I Volleyball Athlete
 
 GitHub: https://github.com/elifyasar12  
 LinkedIn: https://www.linkedin.com
-
----
