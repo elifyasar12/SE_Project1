@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ======================================================
+HEAD SECTION
+Fonts, icons, styles
+====================================================== -->
+
 <head>
 <meta charset="UTF-8">
 <title>Elif Yasar | Portfolio</title>
@@ -11,17 +17,32 @@
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- Main Styles -->
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ======================================================
+NAVBAR
+Top navigation menu
+====================================================== -->
+
 <nav>
+
 <div class="nav-container">
+
 <img src="images/logo.png" class="logo">
 
-<ul>
+<!-- Mobile Menu Button -->
+<div class="menu-toggle">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<!-- Navigation Links -->
+<ul id="nav-links">
 <li><a href="#header">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
@@ -31,13 +52,22 @@
 </ul>
 
 </div>
+
 </nav>
 
-<!-- HERO -->
+
+<!-- ======================================================
+HERO SECTION
+Intro / landing section
+====================================================== -->
+
 <section id="header">
+
 <div class="particles"></div>
+
 <div class="hero">
 
+<!-- Intro Text -->
 <div class="header-text">
 
 <h1>Hi, I’m Elif Yasar</h1>
@@ -56,13 +86,19 @@ from athletics with problem-solving skills in technology.
 
 </div>
 
+<!-- Hero Image -->
 <img src="images/background.png" class="hero-image">
 
 </div>
 
 </section>
 
-<!----------------------------- ABOUT ------------------------------------->
+
+<!-- ======================================================
+ABOUT SECTION
+Education / background / goals
+====================================================== -->
+
 <section id="about">
 
 <div class="particles"></div>
@@ -73,21 +109,30 @@ from athletics with problem-solving skills in technology.
 
 <div class="about-container">
 
-<!-- IMAGE -->
+
+<!-- Profile Image -->
 <div class="about-image">
 <img src="images/user.png" alt="Elif Yasar">
 </div>
 
-<!-- TEXT + CARDS -->
+
+<!-- Text + Cards -->
 <div class="about-content">
 
 <p class="about-text">
-I combine elite athletics with software engineering. Balancing Division I
-volleyball with graduate studies has shaped my discipline, teamwork, and
-ability to solve complex problems under pressure. My focus is on scalable
-systems, artificial intelligence, and impactful technology solutions.
+
+I combine elite athletics with software engineering. As a Division I
+volleyball athlete pursuing a Master’s degree in Computer Science at the
+University at Albany, I have developed strong discipline, teamwork,
+and resilience that translate directly into my technical work.
+
+My interests focus on scalable software systems, artificial intelligence,
+and building impactful technology solutions that solve real-world problems.
+
 </p>
 
+
+<!-- About Cards -->
 <div class="grid-3">
 
 <div class="card hidden">
@@ -117,11 +162,20 @@ technology solutions.
 </div>
 
 </div>
+
 </div>
+
 </section>
 
-<!-- SKILLS -->
+
+<!-- ======================================================
+SKILLS SECTION
+Programming / frameworks / tools
+====================================================== -->
+
 <section id="skills">
+
+<div class="particles"></div>
 
 <div class="section-header">
 <h1>Skills</h1>
@@ -162,8 +216,15 @@ VS Code
 
 </section>
 
-<!-- RESEARCH -->
+
+<!-- ======================================================
+RESEARCH SECTION
+Academic research interests
+====================================================== -->
+
 <section id="research">
+
+<div class="particles"></div>
 
 <div class="section-header">
 <h1>Research</h1>
@@ -172,27 +233,43 @@ VS Code
 <div class="grid-2">
 
 <div class="card hidden">
+
 <h3>🧠 Existing Work</h3>
+
 <p>
-Research focused on deep learning techniques for medical image analysis
-and fracture detection using convolutional neural networks.
+My research focuses on deep learning methods for medical image analysis,
+specifically detecting bone fractures in X-ray images using convolutional
+neural networks and computer vision techniques.
 </p>
+
 </div>
 
+
 <div class="card hidden">
+
 <h3>🚀 Future Interests</h3>
+
 <p>
-AI-driven healthcare systems, interpretable machine learning,
-and intelligent diagnostic systems.
+I am interested in AI-driven healthcare systems, interpretable machine
+learning, and building intelligent diagnostic tools that support medical
+professionals and improve patient outcomes.
 </p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- PROJECTS -->
+
+<!-- ======================================================
+PROJECTS SECTION
+Portfolio projects
+====================================================== -->
+
 <section id="projects">
+
+<div class="particles"></div>
 
 <div class="section-header">
 <h1>Projects</h1>
@@ -200,40 +277,73 @@ and intelligent diagnostic systems.
 
 <div class="grid-2">
 
+
+<!-- Project 1 -->
 <div class="card hidden">
+
 <h3>🩻 Medical Image Fracture Detection</h3>
+
 <p>
-Deep learning model for detecting bone fractures from medical images.
+Developed a deep learning model to automatically detect bone fractures
+from medical images using convolutional neural networks and image
+processing techniques.
 </p>
+
 <small>Python • PyTorch • OpenCV</small>
+
+<a href="https://github.com/elifyasar12/Senior-Resarch" target="_blank" class="project-btn">
+View Code
+</a>
+
 </div>
 
+
+<!-- Project 2 -->
 <div class="card hidden">
+
 <h3>🌐 Alumni Web Application</h3>
+
 <p>
-Full-stack alumni networking platform connecting graduates and
-opportunities.
+Full-stack web application designed to connect alumni with networking
+opportunities, career resources, and professional communities.
 </p>
+
 <small>React • Node • MongoDB</small>
+
+<a href="https://github.com/elifyasar12/cinf301-spr25-assignment1" target="_blank" class="project-btn">
+View Code
+</a>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- CONTACT -->
+
+<!-- ======================================================
+CONTACT SECTION
+Contact form + social links
+====================================================== -->
+
 <section id="contact">
+
+<div class="particles"></div>
 
 <div class="section-header">
 <h1>Contact</h1>
 </div>
 
-<div class="contact-card"> 
+
+<div class="contact-card">
+
 <div class="contact-grid">
 
+<!-- Contact Form -->
 <form>
 
 <input type="text" placeholder="Your Name" required>
+
 <input type="email" placeholder="Your Email" required>
 
 <textarea rows="5" placeholder="Your Message"></textarea>
@@ -242,19 +352,23 @@ opportunities.
 
 </form>
 
+
+<!-- Contact Info -->
 <div class="contact-info">
 
-<p><i class="fa-solid fa-envelope"></i> yourname@email.com</p>
+<p><i class="fa-solid fa-envelope"></i> elifyasar2002@gmail.com</p>
 
 <p>
 <i class="fa-brands fa-linkedin"></i>
-<a href="#" target="_blank">LinkedIn</a>
+<a href="https://www.linkedin.com/in/elif-ya%C5%9Far-63aaa627a/" target="_blank">LinkedIn</a>
 </p>
 
 <p>
 <i class="fa-brands fa-github"></i>
-<a href="#" target="_blank">GitHub</a>
+<a href="https://github.com/elifyasar12" target="_blank">GitHub</a>
 </p>
+
+</div>
 
 </div>
 
@@ -262,7 +376,18 @@ opportunities.
 
 </section>
 
+
+<!-- ======================================================
+SCRIPT FILE
+Animations / particles / mobile nav
+====================================================== -->
+
 <script src="script.js"></script>
+
+
+<!-- Resume Download Button -->
+<a href="resume.pdf" class="btn">Download Resume</a>
+
 
 </body>
 </html>

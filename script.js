@@ -1,4 +1,4 @@
-/* SCROLL ANIMATION */
+/* ------homepage animation-------- */
 
 const observer = new IntersectionObserver(entries => {
 
@@ -21,6 +21,9 @@ for(let i=0;i<30;i++){
 
 let dot = document.createElement("span");
 
+let size = Math.random()*6 + 4;
+dot.style.width = size + "px";
+dot.style.height = size + "px";
 dot.style.left = Math.random()*100 + "%";
 dot.style.animationDuration = (5 + Math.random()*5) + "s";
 dot.style.animationDelay = Math.random()*5 + "s";
@@ -29,4 +32,30 @@ container.appendChild(dot);
 
 }
 
+
+});
+
+document.querySelector("form").addEventListener("submit", function(e){
+
+const name = document.querySelector("input[type='text']").value;
+const email = document.querySelector("input[type='email']").value;
+
+if(name.trim() === ""){
+alert("Please enter your name");
+e.preventDefault();
+}
+
+if(!email.includes("@")){
+alert("Please enter a valid email");
+e.preventDefault();
+}
+
+});
+
+// MOBILE NAV MENU
+const menuBtn = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("#nav-links");
+
+menuBtn.addEventListener("click", () => {
+navLinks.classList.toggle("active");
 });

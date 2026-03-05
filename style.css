@@ -1,3 +1,8 @@
+/* =========================================================
+GLOBAL STYLES
+Reset, fonts, page background
+========================================================= */
+
 *{
 margin:0;
 padding:0;
@@ -18,7 +23,12 @@ radial-gradient(circle at 20% 40%, rgba(150,15,247,0.25), transparent 50%),
 linear-gradient(135deg,#220033 0%,#120018 100%);
 }
 
-/* --------------------------------NAVBAR---------------------------------- */
+
+
+/* =========================================================
+NAVBAR
+Top navigation bar
+========================================================= */
 
 nav{
 background:black;
@@ -32,16 +42,25 @@ z-index:1000;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 10%;
+padding:12px 10%;
 }
 
 .logo{
 height:45px;
 }
 
+/* NAV LINKS */
+
+nav ul{
+display:flex;
+gap:30px;
+align-items:center;
+flex-wrap:nowrap;
+white-space:nowrap;
+}
+
 nav ul li{
-display:inline-block;
-margin:0 20px;
+list-style:none;
 }
 
 nav ul li a{
@@ -65,7 +84,21 @@ nav ul li a:hover::after{
 width:100%;
 }
 
-/*----------------------------------- HERO SECTION --------------------------------*/
+/* MOBILE MENU BUTTON */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+color:#FFD700;
+cursor:pointer;
+}
+
+
+
+/* =========================================================
+HERO SECTION
+Landing page intro
+========================================================= */
 
 #header{
 min-height:100vh;
@@ -77,39 +110,37 @@ overflow:hidden;
 }
 
 /* HERO LAYOUT */
+
 .hero{
 display:flex;
-align-items: normal;
-justify-content: left;
+align-items:normal;
+justify-content:left;
 gap:140px;
 width:100%;
 }
 
-/* TEXT */
+
+/* HERO TEXT CARD */
+
 .header-text{
 max-width:700px;
 margin:auto 0;
 
-
-/* rectangle */
 padding:50px 60px;
 border-radius:20px;
 
-/* glass effect */
 background:rgba(255,255,255,0.03);
 backdrop-filter:blur(10px);
 
-/* border */
 border:1px solid rgba(255,215,0,0.15);
 
-/* shadow */
 box-shadow:0 0 60px rgba(255,215,0,0.08);
 
-/* center text */
 text-align:center;
 
 position:relative;
 z-index:2;
+
 animation:floatCard 6s ease-in-out infinite;
 }
 
@@ -118,13 +149,16 @@ font-size:80px;
 line-height:1.05;
 color:gold;
 margin-bottom:25px;
-
 }
+
+/* TYPING TITLE */
+
 .roles{
 overflow:hidden;
-color: #B57CFF;
+color:#B57CFF;
 border-right:3px solid gold;
 white-space:nowrap;
+
 animation:typing 3s steps(40,end), blink .75s step-end infinite;
 }
 
@@ -136,13 +170,15 @@ to{width:100%}
 @keyframes blink{
 50%{border-color:transparent}
 }
+
 .header-text p{
-    font-size: 18px;
-    line-height:1.6;
-    color:#E5E5E5;
+font-size:18px;
+line-height:1.6;
+color:#E5E5E5;
 }
 
-/* IMAGE */
+
+/* HERO IMAGE */
 
 .hero-image{
 position:absolute;
@@ -150,12 +186,20 @@ right:4%;
 bottom:0;
 height:110vh;
 max-height:900px;
+
 object-fit:contain;
+
 filter:drop-shadow(0 0 120px rgba(255,200,80,0.5));
+
 z-index:2;
 }
 
-/* SPARKLES */
+
+
+/* =========================================================
+BACKGROUND PARTICLE ANIMATION
+Floating sparkles
+========================================================= */
 
 .particles{
 position:absolute;
@@ -169,12 +213,17 @@ overflow:hidden;
 
 .particles span{
 position:absolute;
-width:4px;
-height:4px;
-background:gold;
+width:8px;
+height:8px;
+
+background:radial-gradient(circle,#FFD700,#ffcc0060);
+
 border-radius:50%;
-opacity: 1;
-animation:float 10s linear infinite;
+opacity:0.8;
+
+filter:blur(0.5px);
+
+animation:float 14s linear infinite;
 }
 
 @keyframes float{
@@ -195,7 +244,12 @@ opacity:0;
 
 }
 
-/* SECTIONS */
+
+
+/* =========================================================
+GENERAL SECTION STYLES
+Shared section layout
+========================================================= */
 
 section{
 padding:100px 10%;
@@ -205,7 +259,6 @@ position:relative;
 .section-header{
 margin-bottom:70px;
 text-align:left;
-
 }
 
 .section-header h1{
@@ -222,26 +275,23 @@ margin-top:8px;
 font-size:16px;
 }
 
-/*----------------------------ABOUT -------------------------------------*/
 
-/* ========================= */
-/* ABOUT SECTION */
-/* ========================= */
+
+/* =========================================================
+ABOUT SECTION
+Profile + intro text
+========================================================= */
 
 #about{
 position:relative;
-padding:120px 10%;
+padding:20px 8%;
 }
-
-/* SECTION TITLE */
 
 .section-header h1{
-font-size:70px;
+font-size:50px;
 color:#FFD700;
-margin-bottom:60px;
+margin-bottom:20px;
 }
-
-/* LAYOUT */
 
 .about-container{
 display:flex;
@@ -249,40 +299,24 @@ gap:70px;
 align-items:flex-start;
 }
 
-/* IMAGE */
+/* ABOUT IMAGE */
 
 .about-image{
 position:relative;
+right:7%;
 }
 
 .about-image img{
-width:350px;
+width:400px;
 border-radius:25px;
 box-shadow:0 25px 60px rgba(0,0,0,0.6);
 }
 
-/* glow behind image */
-
-.about-image::before{
-content:"";
-position:absolute;
-width:420px;
-height:420px;
-background:radial-gradient(circle, rgba(255,215,0,0.25), transparent 70%);
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-filter:blur(80px);
-z-index:-1;
-}
-
-/* CONTENT */
+/* ABOUT TEXT */
 
 .about-content{
 max-width:700px;
 }
-
-/* PARAGRAPH */
 
 .about-text{
 font-size:18px;
@@ -291,9 +325,12 @@ color:#E5E5E5;
 margin-bottom:50px;
 }
 
-/* ========================= */
-/* GRID */
-/* ========================= */
+
+
+/* =========================================================
+GRID SYSTEM
+Reusable layout
+========================================================= */
 
 .grid-3{
 display:grid;
@@ -301,9 +338,12 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:35px;
 }
 
-/* ========================= */
-/* CARDS */
-/* ========================= */
+
+
+/* =========================================================
+CARD COMPONENT
+Used in Skills, Research, Projects
+========================================================= */
 
 .card{
 padding:40px;
@@ -323,22 +363,16 @@ backdrop-filter:blur(12px);
 transition:all 0.4s ease;
 }
 
-/* CARD TITLE */
-
 .card h3{
 color:#FFD700;
 margin-bottom:10px;
 font-size:20px;
 }
 
-/* CARD TEXT */
-
 .card p{
 color:#E5E5E5;
 line-height:1.6;
 }
-
-/* HOVER EFFECT */
 
 .card:hover{
 transform:translateY(-10px) scale(1.02);
@@ -346,7 +380,12 @@ border-color:gold;
 box-shadow:0 20px 60px rgba(255,215,0,0.25);
 }
 
-/* CONTACT */
+
+
+/* =========================================================
+CONTACT SECTION
+Contact form and info
+========================================================= */
 
 .contact-grid{
 display:grid;
@@ -354,17 +393,41 @@ grid-template-columns:1fr 1fr;
 gap:60px;
 }
 
+.contact-info p{
+margin-bottom:10px;
+font-size:17px;
+}
+
+.contact-info i{
+color:#FFD700;
+margin-right:8px;
+}
+
+/* FORM */
+
 form input,
 form textarea{
 width:100%;
-padding:15px;
+padding:16px;
 margin-bottom:20px;
 
-border-radius:10px;
-border:none;
+border-radius:12px;
+border:1px solid rgba(255,215,0,0.25);
 
-background:rgba(255,255,255,0.05);
+background:rgba(255,255,255,0.08);
 color:white;
+
+font-size:16px;
+
+transition:0.3s;
+}
+
+form input:focus,
+form textarea:focus{
+outline:none;
+border-color:#FFD700;
+
+box-shadow:0 0 15px rgba(255,215,0,0.4);
 }
 
 form button{
@@ -376,6 +439,9 @@ background:gold;
 font-weight:bold;
 cursor:pointer;
 }
+
+/* CONTACT CARD */
+
 .contact-card{
 max-width:900px;
 margin-top:40px;
@@ -385,8 +451,8 @@ border-radius:25px;
 background:
 linear-gradient(
 145deg,
-rgba(75,0,130,0.45),
-rgba(20,0,60,0.9)
+rgba(110,0,180,0.55),
+rgba(30,0,80,0.9)
 );
 
 border:1px solid rgba(255,215,0,0.25);
@@ -396,7 +462,11 @@ backdrop-filter:blur(12px);
 box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
 
-/* ANIMATION */
+
+
+/* =========================================================
+SCROLL ANIMATIONS
+========================================================= */
 
 .hidden{
 opacity:0;
@@ -409,9 +479,41 @@ opacity:1;
 transform:translateY(0);
 }
 
-/* MOBILE */
+
+
+/* =========================================================
+MOBILE RESPONSIVE DESIGN
+========================================================= */
 
 @media(max-width:900px){
+
+.menu-toggle{
+display:block;
+}
+
+nav ul{
+position:absolute;
+top:70px;
+right:0;
+
+background:black;
+width:220px;
+
+flex-direction:column;
+text-align:left;
+
+padding:20px;
+
+display:none;
+}
+
+nav ul li{
+margin:15px 0;
+}
+
+nav ul.active{
+display:flex;
+}
 
 .hero{
 flex-direction:column;
@@ -419,7 +521,8 @@ text-align:center;
 }
 
 .hero-image{
-height:350px;
+height:320px;
+margin-top:30px;
 }
 
 .about-container{
