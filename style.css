@@ -1,22 +1,14 @@
-/* =========================================================
-GLOBAL STYLES
-Reset, fonts, page background
-========================================================= */
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Outfit',sans-serif;
 }
-
 html{
 scroll-behavior:smooth;
 }
-
 body{
 color:white;
-
 background:
 radial-gradient(circle at 75% 50%, rgba(255,200,80,0.2), transparent 40%),
 radial-gradient(circle at 20% 40%, rgba(150,15,247,0.25), transparent 50%),
@@ -25,10 +17,7 @@ linear-gradient(135deg,#220033 0%,#120018 100%);
 
 
 
-/* =========================================================
-NAVBAR
-Top navigation bar
-========================================================= */
+/* --------------------------------------------NAVBAR-------------------------------------------- */
 
 nav{
 background:black;
@@ -37,14 +26,12 @@ position:sticky;
 top:0;
 z-index:1000;
 }
-
 .nav-container{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:12px 10%;
 }
-
 .logo{
 height:45px;
 }
@@ -65,17 +52,14 @@ align-items:center;
 flex-wrap:nowrap;
 white-space:nowrap;
 }
-
 nav ul li{
 list-style:none;
 }
-
 nav ul li a{
 color:gold;
 text-decoration:none;
 position:relative;
 }
-
 nav ul li a::after{
 content:"";
 position:absolute;
@@ -86,7 +70,6 @@ height:2px;
 background:gold;
 transition:0.3s;
 }
-
 nav ul li a:hover::after{
 width:100%;
 }
@@ -102,10 +85,7 @@ cursor:pointer;
 
 
 
-/* =========================================================
-HERO SECTION
-Landing page intro
-========================================================= */
+/* --------------------------------------------HERO SECTION-------------------------------------------- */
 
 #header{
 min-height:100vh;
@@ -173,7 +153,6 @@ animation:typing 3s steps(40,end), blink .75s step-end infinite;
 from{width:0}
 to{width:100%}
 }
-
 @keyframes blink{
 50%{border-color:transparent}
 }
@@ -201,12 +180,7 @@ filter:drop-shadow(0 0 120px rgba(255,200,80,0.5));
 z-index:2;
 }
 
-
-
-/* =========================================================
-BACKGROUND PARTICLE ANIMATION
-Floating sparkles
-========================================================= */
+/* --------------------------------------------BACKGROUND PARTICLE ANIMATION--------------------------------------------*/
 
 .particles{
 position:absolute;
@@ -253,28 +227,22 @@ opacity:0;
 
 
 
-/* =========================================================
-GENERAL SECTION STYLES
-Shared section layout
-========================================================= */
+/* --------------------------GENERAL SECTION STYLES---------------------------*/
 
 section{
 padding:100px 10%;
 position:relative;
 }
-
 .section-header{
 margin-bottom:70px;
 text-align:left;
 }
-
 .section-header h1{
 font-size:52px;
 color:#FFD700;
 font-weight:700;
 letter-spacing:1px;
 }
-
 .section-header p{
 color:#E5E5E5;
 opacity:0.7;
@@ -283,23 +251,17 @@ font-size:16px;
 }
 
 
-
-/* =========================================================
-ABOUT SECTION
-Profile + intro text
-========================================================= */
+/* --------------------------------------------ABOUT SECTION-------------------------------------------- */
 
 #about{
 position:relative;
 padding:20px 8%;
 }
-
 .section-header h1{
 font-size:50px;
 color:#FFD700;
 margin-bottom:20px;
 }
-
 .about-container{
 display:flex;
 gap:70px;
@@ -307,12 +269,10 @@ align-items:flex-start;
 }
 
 /* ABOUT IMAGE */
-
 .about-image{
 position:relative;
 right:7%;
 }
-
 .about-image img{
 width:400px;
 border-radius:25px;
@@ -320,11 +280,9 @@ box-shadow:0 25px 60px rgba(0,0,0,0.6);
 }
 
 /* ABOUT TEXT */
-
 .about-content{
 max-width:700px;
 }
-
 .about-text{
 font-size:18px;
 line-height:1.7;
@@ -334,10 +292,7 @@ margin-bottom:50px;
 
 
 
-/* =========================================================
-GRID SYSTEM
-Reusable layout
-========================================================= */
+/* --------------------------------------------GRID SYSTEM-------------------------------------------- */
 
 .grid-3{
 display:grid;
@@ -347,10 +302,7 @@ gap:35px;
 
 
 
-/* =========================================================
-CARD COMPONENT
-Used in Skills, Research, Projects
-========================================================= */
+/*--------------------------------------CARD COMPONENT------------------------------ */
 
 .card{
 padding:40px;
@@ -369,27 +321,22 @@ backdrop-filter:blur(12px);
 
 transition:all 0.4s ease;
 }
-
 .card h3{
 color:#FFD700;
 margin-bottom:10px;
 font-size:20px;
 }
-
 .card p{
 color:#E5E5E5;
 line-height:1.6;
 }
-
 .card:hover{
 transform:translateY(-10px) scale(1.02);
 border-color:gold;
 box-shadow:0 20px 60px rgba(255,215,0,0.25);
 }
 
-/* =========================================================
-BLOG SECTION
-========================================================= */
+/* --------------------------------------------BLOG SECTION--------------------------------------------*/
 
 .blog-container{
 display:grid;
@@ -397,7 +344,6 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:40px;
 margin-top:40px;
 }
-
 .blog-card{
 
 padding:30px;
@@ -416,30 +362,26 @@ box-shadow:0 10px 40px rgba(0,0,0,0.5);
 
 transition:0.3s;
 }
-
 .blog-card:hover{
 transform:translateY(-6px);
 }
-
 .blog-card h3{
 color:#FFD700;
 margin-bottom:15px;
 font-size:22px;
 }
-
 .blog-card p{
 line-height:1.7;
 font-size:15px;
 color:#ddd;
 }
 
-/* ================= BLOG BACKGROUND IMAGE ================= */
+/* -----------------------------BLOG BACKGROUND IMAGE -------------------------------*/
 
 #blog{
 position:relative;
 overflow:hidden;
 }
-
 .blog-bg{
 position:absolute;
 top:50%;
@@ -467,10 +409,7 @@ width:100%;
 position:relative;
 z-index:2;
 }
-/* =========================================================
-BLOG META INFO
-Date + Category Tag
-========================================================= */
+/* --------------------------------------------BLOG META INFO---------------------------------------- */
 
 .blog-meta{
 display:flex;
@@ -478,12 +417,10 @@ justify-content:space-between;
 align-items:center;
 margin-bottom:12px;
 }
-
 .blog-date{
 font-size:13px;
 color:#ccc;
 }
-
 .blog-tag{
 font-size:12px;
 background:#FFD700;
@@ -492,22 +429,17 @@ padding:4px 10px;
 border-radius:20px;
 font-weight:600;
 }
-/* =========================================================
-CONTACT SECTION
-Contact form and info
-========================================================= */
+/* -----------------------------CONTACT SECTION------------------------*/
 
 .contact-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:60px;
 }
-
 .contact-info p{
 margin-bottom:10px;
 font-size:17px;
 }
-
 .contact-info i{
 color:#FFD700;
 margin-right:8px;
@@ -574,9 +506,7 @@ box-shadow:0 20px 60px rgba(0,0,0,0.6);
 
 
 
-/* =========================================================
-SCROLL ANIMATIONS
-========================================================= */
+/* --------------------------------------------SCROLL ANIMATIONS--------------------------------------------*/
 
 .hidden{
 opacity:0;
@@ -590,16 +520,13 @@ transform:translateY(0);
 }
 
 
-
-/* =========================================================
-MOBILE RESPONSIVE DESIGN
-========================================================= */
+/* --------------------------------------------MOBILE RESPONSIVE DESIGN--------------------------------------------*/
 
 @media(max-width:900px){
 
-.menu-toggle{
-display:block;
-}
+    .menu-toggle{
+        display:block;
+    }
 
 nav ul{
 position:absolute;
@@ -624,23 +551,19 @@ margin:15px 0;
 nav ul.active{
 display:flex;
 }
-
 .hero{
 flex-direction:column;
 text-align:center;
 }
-
 .hero-image{
 height:320px;
 margin-top:30px;
 }
-
 .about-container{
 flex-direction:column;
 align-items:center;
 text-align:center;
 }
-
 .contact-grid{
 grid-template-columns:1fr;
 }
